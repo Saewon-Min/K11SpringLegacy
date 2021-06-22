@@ -42,15 +42,67 @@ pageEncoding="UTF-8"%>
 	</ul>
 	
 	
+	<!-- 컨트롤러 : FormController.java -->
+	<h3>form값 처리하기</h3>
+	<li>
+		<a href="./form/servletRequest?id=kosmo&pw=1234"
+			target="_blank">HttpServletReqeust로 폼 값 받기</a>
+	</li>
+	
+	
+	<li>
+		<a href="./form/requestParam.do?id=kosmo&pw=1234
+		&name=홍길동&email=hong@gildong.com" 
+			target="_blank">@requestParam 어노테이션 폼값받기</a>
+	</li>
+	
+	
+	<li>
+		<a href="./form/commandObjGet.do?id=kosmo&pw=1234
+		&name=홍길동&email=hong@gildong.com" 
+			target="_blank">커맨드(Command) 객체로 한번에 폼값받기</a>
+	</li>
 	
 	
 	
+	<li>
+		<a href="./form/gildong99/코스모" target="_blank">
+			pathVariable 어노테이션으로 폼값 받기
+		</a>
+	</li>
 	
 	
 	
+	<!-- 컨트롤러 : RequestMappingController.java -->
+	<h3>@RequestMapping 어노테이션 활용</h3>
+	<li>
+		<a href="./requestMapping/index.do" target="_blank">
+		requestMapping 시작페이지 바로가기</a>
+	</li>
 	
 	
+	<!-- 컨트롤러 : ValidateController.java -->
+	<h2>폼 데이터 검증하기 - Validator</h2>
+	<li>
+		<a href="validate/memberRegist.do" target="_blank">
+		회원가입 바로가기</a>
+	</li>
 	
+	
+	<!-- 컨트롤러 : EnvironmentController.java -->
+	<h2>Environment 객체를 이용한 외부파일 참조하기</h2>
+	<li>
+		<a href="environment/main1" target="_blank">
+		외부파일 참조하기 1 (Environment객체 사용)</a>
+	</li>	
+	<li>
+		<a href="environment/main2" target="_blank">
+		외부파일 참조하기 2 (XML설정파일 사용)</a>
+	</li>
+	<li>
+		<a href="environment/main3" target="_blank">
+		외부파일 참조하기 3 (Environment객체 사용)</a>
+	</li>	
 </div>
 
 
