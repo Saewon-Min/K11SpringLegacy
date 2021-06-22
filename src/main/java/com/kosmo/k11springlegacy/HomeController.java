@@ -36,4 +36,14 @@ public class HomeController {
 		return "home";
 	}
 	
+
+	@RequestMapping("/home/helloSpring")
+	public String helloSpring(Model model) {
+		String firstMessage = "My first Spring MVC 컨트롤러";
+		model.addAttribute("firstMessage", firstMessage);
+		return "HelloSpring";
+	}
+	
+	
+
 }
