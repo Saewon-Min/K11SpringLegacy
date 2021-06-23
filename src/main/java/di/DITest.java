@@ -1,10 +1,10 @@
 package di;
 
-class Person{
+class Persons{
 	String name;
 	int age;
-	//public Person() {}
-	private Person() {}
+	public Persons() {}
+	//private Person() {}
 }
 public class DITest {
 	/*
@@ -13,8 +13,8 @@ public class DITest {
 		영향을 받는다.
 	 */
 	public static void aPerson(){
-		//Person person1 =  new Person();
-		//person1.name = "홍길동";
+		Persons person1 =  new Persons();
+		person1.name = "홍길동";
 	}
 
 	/*
@@ -22,7 +22,7 @@ public class DITest {
 		결합도가 낮아지기 때문에 Person클래스에 변화가 생기더라도
 		직접적인 영향을 받지 않는다. 또한 코드도 좀 더 간결해진다.
 	 */
-	public static void bPerson(Person p){
+	public static void bPerson(Persons p){
 		p.age = 27;
 	}
 	public static void main(String[] args) {
