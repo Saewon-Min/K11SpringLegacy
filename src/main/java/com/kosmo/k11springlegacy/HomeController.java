@@ -36,13 +36,31 @@ public class HomeController {
 		return "home";
 	}
 	
-	
+	/*
+	컨트롤러 만들기
+	1. 요청명을 먼저 생성한다.
+	2. 요청명을 통해 컨트롤러를 찾아 매핑된 메소드를 호출한다.
+		컨트롤러에서는 매핑명을 통해 메소드를 호출하므로 
+		메소드명은 중복되지 않는 정도의 이름을 사용하면 된다.
+	 */
 	@RequestMapping("/home/helloSpring")
 	public String helloSpring(Model model) {
+		/*
+		3. Spring에서는 4가지 영역과 비슷한 model 객체를 사용해서
+			속성을 저장한다. 사용법은 거의 비슷하다.
+		 */
 		String firstMessage = "My first Spring MVC 컨트롤러";
 		model.addAttribute("firstMessage", firstMessage);
+		
+		/*
+		4. 뷰의 이름을 반환한다. 서블릿에서의 포워드와 비슷한 개념이다.
+			해당 뷰의 이름을 ViewResolver가 조립하여 최종적으로 뷰를
+			웹브라우저에 출력한다.
+			뷰의 기본 경로는 /webapp/WEB-INF/views 하위이다.
+		 */
 		return "HelloSpring";
 	}
 	
 	
+
 }
