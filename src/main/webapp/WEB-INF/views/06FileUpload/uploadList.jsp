@@ -22,7 +22,7 @@
    		 &nbsp;&nbsp;
    		 파일크기 : ${file.value }Kb
    		 &nbsp;&nbsp;
-   		 <a href="download.do?fileName=${file.key }&oriFileName=임시파일명${vs.count }.jpg">
+   		 <a href="download.do?fileName=${file.key }&oriFileName=임시파일명${vs.count }.jpg"> <!-- varStatus.count는 1부터 자동으로 출력됨 -->
    			 [다운로드]
    		 </a> 
    		 <!-- 다운로드시 원본파일명으로 변경하려면 기존

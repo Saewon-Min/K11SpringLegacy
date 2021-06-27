@@ -39,7 +39,7 @@ public class FormController {
 		String id =  req.getParameter("id");
 		String pw =  req.getParameter("pw");
 		/*
-		View로 전달한 데이터를 Model객체에 저장한다.
+		View로 전달할 데이터를 Model객체에 저장한다.
 		JSP의 영역과 동일한 역할을 한다.
 		 */
 		model.addAttribute("id",id);

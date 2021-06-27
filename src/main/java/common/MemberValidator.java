@@ -6,7 +6,7 @@ import org.springframework.validation.Validator;
 
 /*
 유효성 검증을 위한 클래스 정의를 위해 Validator 인터페이스를 구현한다.
-차후 support(), validate() 두개의 메소드를 오버라이딩 한다.ㄴ
+차후 support(), validate() 두개의 메소드를 오버라이딩 한다.
  */
 public class MemberValidator implements Validator{
 	/*
@@ -28,6 +28,14 @@ public class MemberValidator implements Validator{
 		실제 폼 값에 대한 검증을 진행한다.
 		매개변수1 : 폼값을 저장한 커맨드 객체
 		매개변수2 : 에러 정보를 저장할 Errors 타입의 변수
+	 */
+	
+	
+	/*
+	ValidateController에서 객체 생성했던 코드 참조하기
+	
+	MemberValidator validator = new MemberValidator();
+	validator.validate(memberDTO, result);
 	 */
 	@Override
 	public void validate(Object obj, Errors errors) {

@@ -28,8 +28,8 @@ public class EnvApplicationConfig {
 		
 		// classpath:설정파일.xml과 동일한 설정. 
 		// ClassPathResource객체가 대체함
-		locations[0] = new ClassPathResource("EnvBoard1.properties");
-		locations[1] = new ClassPathResource("EnvBoard2.properties");
+		locations[0] = new ClassPathResource("EnvBoard1.properties");   // user, pass
+		locations[1] = new ClassPathResource("EnvBoard2.properties");   // driver, url
 	
 		// 3. 설정된 위치의 config 참조변수의 매개변수로 파일을 읽어옴
 		config.setLocations(locations);

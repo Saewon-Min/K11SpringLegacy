@@ -37,7 +37,7 @@ public class EnvironmentController {
 		String adminPwStr = "";
 		
 		try {
-			// 4. 외부파일의 경로를 지정한 후 addList()로 프로퍼티 소스를 추가한다.
+			// 4. 외부파일의 경로를 지정한 후 addLast()로 프로퍼티 소스를 추가한다.
 			/*
 			classpath : 해당 키워드는 프로젝트를 배포했을때 classes폴더
 				하위로 export되는 경로를 가리킨다.
@@ -77,7 +77,7 @@ public class EnvironmentController {
 		AbstractApplicationContext ctx =
 			new GenericXmlApplicationContext("classpath:EnvAppCtx.xml");
 	
-		// 프로퍼티 파일의 값을 저장한 bean(자바객체_을 주입받는다.
+		// 프로퍼티 파일의 값을 저장한 bean(자바객체)을 주입받는다.
 		UserConnection userCon =
 			ctx.getBean("userConnection",UserConnection.class);
 		
@@ -93,7 +93,7 @@ public class EnvironmentController {
 	
 	
 	/*
-	외부파일읽기ㄴ3 : 어노테이션을 이용한 외부파일 참조.
+	외부파일읽기3 : 어노테이션을 이용한 외부파일 참조.
 			XML설정파일 대신 EnvApplicationConfig 클래스를
 			이용하여 외부파일을 읽어온다.
 	 */

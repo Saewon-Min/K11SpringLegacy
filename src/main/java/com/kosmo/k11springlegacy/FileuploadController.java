@@ -215,7 +215,9 @@ public class FileuploadController {
 		mv.setViewName("fileDownloadView"); // 다운로드할 VIEW명
 		mv.addObject("downloadFile",downloadFile); // 저장된 파일명
 		mv.addObject("oriFileName",oriFileName); // 원본파일명
+		
 		return mv;
+		
 	}
 
 
