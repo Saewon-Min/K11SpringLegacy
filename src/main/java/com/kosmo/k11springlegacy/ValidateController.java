@@ -49,12 +49,13 @@ public class ValidateController {
 		MemberValidator validator = new MemberValidator();
 		validator.validate(memberDTO, result);
 		
+		// return값은 ture 거나 errors 이다.
 		// 만약 유효성 검증에 실패했다면
 		if(result.hasErrors()) {
 			System.out.println("유효성 체크 실패 : "+result.toString());
 			// Model객체에 에러메세지 저장 후
 			model.addAttribute("formError","폼값 유효성 체크에 실패하였습니다.");
-			// 가입페이지로 다시 돌아간단
+			// 가입페이지로 다시 돌아간다.
 			viewPage = "03Validate/memberRegist";
 			
 		}
